@@ -4,7 +4,7 @@
     Author     : Orus
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!--@page contentType="text/html" pageEncoding="UTF-8"->
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,4 +15,6 @@
         <h1>Hello World!</h1>
         <a href="listarCategorias.html">Cargar Lista de Categorias</a>
     </body>
-</html>
+</html-->
+
+<jsp:forward page="listarCategorias.html"></jsp:forward>
