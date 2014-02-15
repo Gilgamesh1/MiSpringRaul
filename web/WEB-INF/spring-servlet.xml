@@ -26,7 +26,7 @@
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <property name="viewClass"
-                  value="org.springframework.web.servlet.view.JstlView" />
+                  value="org.springframework.web.servlet.view.tiles3.TilesView"/> 
         <property name="prefix" value="/WEB-INF/jsp/" />
         <property name="suffix" value=".jsp" />
     </bean>
@@ -39,6 +39,7 @@
         </property>  
     </bean> 
     
+    <!-- HIBERNATE -->
     <bean class="inkar.app.hibernate.HibernateUtil" factory-method="getSessionFactory"/> 
     <!--destroy-method="close"-->
     
@@ -69,6 +70,19 @@
     
     <tx:annotation-driven transaction-manager="transacctionManager"/> 
    
-    <bean id="persistenceExceptionTranslationPostProcessor"
-         class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/ -->
+<bean id="persistenceExceptionTranslationPostProcessor"
+    class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/ -->
+         
+    <!-- TILES -->
+    <bean id="tilesConfigurer"
+          class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+        <property name="definitions">
+            <list>
+                <value>/WEB-INF/tiles.xml</value>
+            </list>
+        </property>
+        <!-- resolving preparer names as Spring bean definition names -->
+        <property name="preparerFactoryClass"
+                  value="org.springframework.web.servlet.view.tiles3.SpringBeanPreparerFactory"/>
+    </bean>
 </beans>

@@ -5,17 +5,17 @@
 
 <tiles-definitions>
     <definition name="base.definition"
-                template="/WEB-INF/jsp/layout.jsp">
+                template="/WEB-INF/jsp/maqueta/main.jsp">
         <put-attribute name="title" value="" />
-        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
-        <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
-        <put-attribute name="body" value="" />
-        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+        <put-attribute name="header" value="/WEB-INF/jsp/maqueta/cabecera.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/maqueta/menu.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/maqueta/blanco.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/maqueta/pie" />
     </definition>
  
-    <definition name="contact" extends="base.definition">
+    <definition name="cargarCategorias" extends="base.definition">
         <put-attribute name="title" value="Contact Manager" />
-        <put-attribute name="body" value="/WEB-INF/jsp/contact.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/cargarCategorias.jsp" />
     </definition>
  
 </tiles-definitions>
