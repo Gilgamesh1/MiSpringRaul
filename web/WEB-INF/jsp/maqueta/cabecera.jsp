@@ -7,7 +7,7 @@
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<h3><spring:message code="label.title"/></h3>
+<h3><!-- spring:message code="label.title"/ -->cabecera</h3>
  
 <span style="float: right">
     <a href="?lang=en">en</a> 
