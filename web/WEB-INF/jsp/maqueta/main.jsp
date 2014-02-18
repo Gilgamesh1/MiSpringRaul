@@ -10,10 +10,9 @@
     "http://www.w3.org/TR/html4/loose.dtd">
 <html>
     <head>
-        <link rel="stylesheet" href="<spring:theme code="css"/>" type="text/css"></link>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><tiles:insertAttribute name="title" ignore="true" /></title>
-        <style>
+        <style type="text/css">
             body {
                 font-family: sans-serif, Arial;
             }
