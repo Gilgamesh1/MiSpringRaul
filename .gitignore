@@ -1,1 +1,3 @@
 *.jar
+/dist/
+/build/

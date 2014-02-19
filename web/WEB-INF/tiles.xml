@@ -15,11 +15,11 @@
  
     <definition name="cargarCategorias" extends="base.definition">
         <put-attribute name="title" value="Lista de Categorias" />
-        <put-attribute name="body" value="/WEB-INF/jsp/cargarCategorias.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/cu_mtncategoria/cargarCategorias.jsp" />
     </definition>
  
     <definition name="mtnCategoria" extends="base.definition">
         <put-attribute name="title" value="Mantenimiento de Categorias" />
-        <put-attribute name="body" value="/WEB-INF/jsp/mtnCategoria.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/cu_mtncategoria/mtnCategoria.jsp" />
     </definition>
 </tiles-definitions>
