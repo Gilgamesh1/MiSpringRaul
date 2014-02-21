@@ -10,7 +10,7 @@
         </id>
         <property column="titulo" name="titulo"/>
         <property column="descripcion" name="descripcion"/>
-        <property column="fecha" name="fecha"/>
+        <property column="fecha" name="fecha" type="date"/>
         <many-to-one name="categoria" column="idcategoria_fk" class="inkar.app.hibernate.modelo.CategoriaVO" cascade="none" not-null="true">
             
         </many-to-one>
