@@ -27,6 +27,7 @@
           class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <property name="viewClass"
                   value="org.springframework.web.servlet.view.tiles3.TilesView"/> 
+        <property name="order" value="#{tilesViewResolver.order+1}" />
         <!--property name="prefix" value="/WEB-INF/jsp/" />
         <property name="suffix" value=".jsp" /-->
     </bean>
@@ -74,8 +75,8 @@
     class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/ -->
          
     <!-- TILES -->
-    <bean id="tilesviewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
-        <property name="order" value="0" />
+    <bean id="tilesViewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
+        <!--property name="order" value="2" /-->
     </bean>
     
     <bean id="tilesConfigurer"

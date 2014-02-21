@@ -11,6 +11,7 @@
     <property name="hibernate.format_sql">true</property>
     <mapping resource="inkar/app/hibernate/modelo/CategoriaVO.hbm.xml"/>
     <mapping resource="inkar/app/hibernate/modelo/UsuarioVO.hbm.xml"/>
+    <mapping resource="inkar/app/hibernate/modelo/PeliculaVO.hbm.xml"/>
   </session-factory>
   <!--session-factory>
     </session-factory-->

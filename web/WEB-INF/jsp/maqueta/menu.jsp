@@ -4,6 +4,6 @@
     Author     : Orus
 --%>
 
-<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
- 
-<p><!-- spring:message code="label.menu"/ --> Menu</p>
+<p>Menu</p>
+<p><a href="listarCategorias.html">Cargar Lista de Categorias</a></p>
+<p><a href="listarPeliculas.html">Cargar Lista de Peliculas</a></p>

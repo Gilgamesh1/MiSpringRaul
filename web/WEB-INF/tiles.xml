@@ -12,14 +12,23 @@
         <put-attribute name="body" value="/WEB-INF/jsp/maqueta/blanco.jsp" />
         <put-attribute name="footer" value="/WEB-INF/jsp/maqueta/pie.jsp" />
     </definition>
- 
+    <!-- CU_MTNCATEGORIA -->
     <definition name="cargarCategorias" extends="base.definition">
         <put-attribute name="title" value="Lista de Categorias" />
         <put-attribute name="body" value="/WEB-INF/jsp/cu_mtncategoria/cargarCategorias.jsp" />
     </definition>
- 
     <definition name="mtnCategoria" extends="base.definition">
         <put-attribute name="title" value="Mantenimiento de Categorias" />
         <put-attribute name="body" value="/WEB-INF/jsp/cu_mtncategoria/mtnCategoria.jsp" />
+    </definition>
+    
+    <!-- CU_MTNPELICULA -->
+    <definition name="cargarPeliculas" extends="base.definition">
+        <put-attribute name="title" value="Lista de Peliculas" />
+        <put-attribute name="body" value="/WEB-INF/jsp/cu_mtnpelicula/cargarPeliculas.jsp" />
+    </definition>
+    <definition name="mtnPelicula" extends="base.definition">
+        <put-attribute name="title" value="Mantenimiento de Pelicula" />
+        <put-attribute name="body" value="/WEB-INF/jsp/cu_mtnpelicula/mtnPelicula.jsp" />
     </definition>
 </tiles-definitions>

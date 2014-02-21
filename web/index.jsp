@@ -14,5 +14,6 @@
     <body>
         <h1>Hello World!</h1>
         <a href="listarCategorias.html">Cargar Lista de Categorias</a>
+        <a href="listarPeliculas.html">Cargar Lista de Peliculas</a>
     </body>
 </html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="inkar.app.hibernate.modelo.PeliculaVO" table="pelicula">
+        <id column="idpelicula" name="id">
+            <generator class="sequence">
+                <param name="sequence">pelicula_idpelicula_seq</param>
+            </generator>
+        </id>
+        <property column="titulo" name="titulo"/>
+        <property column="descripcion" name="descripcion"/>
+        <property column="fecha" name="fecha"/>
+        <many-to-one name="categoria" column="idcategoria_fk" class="inkar.app.hibernate.modelo.CategoriaVO" cascade="none" not-null="true">
+            
+        </many-to-one>
+        <!--many-to-one name="id_cat_item_fk" class="com.stc.veles.model.vo.Cat_itemVO"
+            column="id_cat_item_fk" /-->
+    </class>
+</hibernate-mapping>

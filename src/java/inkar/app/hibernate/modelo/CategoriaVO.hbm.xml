@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-  <!--class dynamic-insert="false" dynamic-update="false" mutable="true" name="mi.spring.libs.form.Contact" optimistic-lock="version" polymorphism="implicit" select-before-update="false"/-->
+    <!--class dynamic-insert="false" dynamic-update="false" mutable="true" name="mi.spring.libs.form.Contact" optimistic-lock="version" polymorphism="implicit" select-before-update="false"/-->
     <class name="inkar.app.hibernate.modelo.CategoriaVO" table="categoria">
         <id column="idcategoria" name="id">
             <generator class="sequence">
@@ -10,5 +10,11 @@
             </generator>
         </id>
         <property column="descripcion" name="descripcion"/>
+        <set name="peliculas" cascade="all" inverse="true"  >
+            <key>
+                <column name="idcategoria_fk"  />
+            </key>
+            <one-to-many class="inkar.app.hibernate.modelo.PeliculaVO" />
+        </set>
     </class>
 </hibernate-mapping>

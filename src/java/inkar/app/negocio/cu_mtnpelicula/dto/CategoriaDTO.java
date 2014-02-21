@@ -2,24 +2,23 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package inkar.app.hibernate.modelo;
+package inkar.app.negocio.cu_mtnpelicula.dto;
 
-import java.util.Set;
+import java.io.Serializable;
 
 /**
  *
  * @author Orus
  */
-public class CategoriaVO {
+public class CategoriaDTO implements Serializable{
 
     private int id;
     private String descripcion;
-    private Set<PeliculaVO> peliculas;
 
-    public CategoriaVO() {
+    public CategoriaDTO() {
     }
 
-    public CategoriaVO(int id, String descripcion) {
+    public CategoriaDTO(int id, String descripcion) {
         this.id = id;
         this.descripcion = descripcion;
     }
@@ -39,30 +38,16 @@ public class CategoriaVO {
     }
 
     /**
-     * @return the descripcion
+     * @return the Descripcion
      */
     public String getDescripcion() {
         return descripcion;
     }
 
     /**
-     * @param descripcion the descripcion to set
+     * @param Descripcion the Descripcion to set
      */
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
-    }
-
-    /**
-     * @return the peliculas
-     */
-    public Set<PeliculaVO> getPeliculas() {
-        return peliculas;
-    }
-
-    /**
-     * @param peliculas the peliculas to set
-     */
-    public void setPeliculas(Set<PeliculaVO> peliculas) {
-        this.peliculas = peliculas;
     }
 }

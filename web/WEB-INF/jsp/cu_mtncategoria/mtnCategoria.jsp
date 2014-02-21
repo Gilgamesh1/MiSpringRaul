@@ -16,7 +16,7 @@
             <td><spring:message code="label.categoria.id"/></td><td><form:input path="id"/></td>
         </tr>
         <tr>
-            <td><spring:message code="label.categoria.descripcion"/></td><td><form:input path="descripcion" /></td>
+            <td><spring:message code="label.descripcion"/></td><td><form:input path="descripcion" /></td>
         </tr>
         <tr>
             <td colspan="2"><form:button value="submit" ><spring:message code="label.boton.guardar"/></form:button></td>
