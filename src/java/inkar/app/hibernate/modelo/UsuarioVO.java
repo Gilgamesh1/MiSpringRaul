@@ -5,6 +5,8 @@
 package inkar.app.hibernate.modelo;
 
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  *
@@ -16,6 +18,7 @@ public class UsuarioVO implements Serializable {
     private String nombre;
     private String apepaterno;
     private String apematerno;
+    private Set<PeliculaVO> peliculas = new HashSet();
 
     public UsuarioVO() {
     }
@@ -81,5 +84,19 @@ public class UsuarioVO implements Serializable {
      */
     public void setApematerno(String apematerno) {
         this.apematerno = apematerno;
+    }
+
+    /**
+     * @return the peliculas
+     */
+    public Set<PeliculaVO> getPeliculas() {
+        return peliculas;
+    }
+
+    /**
+     * @param peliculas the peliculas to set
+     */
+    public void setPeliculas(Set<PeliculaVO> peliculas) {
+        this.peliculas = peliculas;
     }
 }

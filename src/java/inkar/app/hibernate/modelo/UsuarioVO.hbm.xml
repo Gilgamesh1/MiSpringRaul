@@ -12,5 +12,11 @@
         <property column="nombre" name="nombre"/>
         <property column="apepaterno" name="apepaterno"/>
         <property column="apematerno" name="apematerno"/>
+        <set name="peliculas" table="pedido" cascade="all" inverse="true">
+            <key>
+                <column name="idusuario_fk"/>
+            </key>
+            <many-to-many column="idpelicula_fk" class="inkar.app.hibernate.modelo.PeliculaVO"/>
+        </set>
     </class>
 </hibernate-mapping>

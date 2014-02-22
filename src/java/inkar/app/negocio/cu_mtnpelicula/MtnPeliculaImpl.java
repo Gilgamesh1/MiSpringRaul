@@ -93,7 +93,7 @@ public class MtnPeliculaImpl implements MtnPelicula {
     @Override
     public void eliminarPelicula(int id) {
         logger.debug("eliminarPelicula - Inicio");
-        PeliculaVO peliculaVo = (PeliculaVO) dao.getEntity(PeliculaVO.class,id);
+        PeliculaVO peliculaVo = (PeliculaVO) dao.getEntity(PeliculaVO.class, id);
         dao.eliminar(peliculaVo);
         logger.debug("eliminarPelicula - Fin");
     }

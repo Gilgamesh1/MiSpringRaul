@@ -5,6 +5,8 @@
 package inkar.app.hibernate.modelo;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  *
@@ -17,6 +19,7 @@ public class PeliculaVO {
     private String descripcion;
     private Date fecha;
     private CategoriaVO categoria;
+    private Set<UsuarioVO> usuarios = new HashSet();
 
     public PeliculaVO() {
     }
@@ -102,5 +105,19 @@ public class PeliculaVO {
      */
     public void setCategoria(CategoriaVO categoria) {
         this.categoria = categoria;
+    }
+
+    /**
+     * @return the usuarios
+     */
+    public Set<UsuarioVO> getUsuarios() {
+        return usuarios;
+    }
+
+    /**
+     * @param usuarios the usuarios to set
+     */
+    public void setUsuarios(Set<UsuarioVO> usuarios) {
+        this.usuarios = usuarios;
     }
 }
